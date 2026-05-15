@@ -141,7 +141,6 @@ pub fn build_download_prebuilt_output(
         checksum_url: Some(nushell_checksum_url(version)),
         download_name: Some(asset),
         download_url: nushell_download_url(version, env)?,
-        http_headers: Default::default(),
         post_script: None,
     })
 }
