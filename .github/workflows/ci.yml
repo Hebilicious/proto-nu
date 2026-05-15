@@ -19,6 +19,7 @@ jobs:
         uses: dtolnay/rust-toolchain@master
         with:
           toolchain: 1.94.1
+          components: rustfmt
           targets: wasm32-wasip1
 
       - name: Cargo fmt

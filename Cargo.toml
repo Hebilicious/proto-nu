@@ -10,7 +10,7 @@ crate-type = ["cdylib", "lib"]
 [dependencies]
 anyhow = "1.0.100"
 extism-pdk = "1.4.1"
-proto_pdk = "0.32.7"
+proto_pdk = "=0.32.7"
 regex = "1.12.2"
 serde = { version = "1.0.228", features = ["derive"] }
 
