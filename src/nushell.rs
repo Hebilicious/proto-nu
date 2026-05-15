@@ -289,10 +289,7 @@ mod tests {
             output.download_name,
             Some("nu-0.112.2-aarch64-apple-darwin.tar.gz".into()),
         );
-        assert_eq!(
-            output.checksum_name,
-            Some("SHA256SUMS".into()),
-        );
+        assert_eq!(output.checksum_name, Some("SHA256SUMS".into()),);
         assert_eq!(
             output.download_url,
             "https://github.com/nushell/nushell/releases/download/0.112.2/nu-0.112.2-aarch64-apple-darwin.tar.gz",
