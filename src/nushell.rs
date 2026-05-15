@@ -136,7 +136,7 @@ pub fn build_download_prebuilt_output(
     Ok(DownloadPrebuiltOutput {
         archive_prefix: Some(archive_prefix),
         checksum: None,
-        checksum_name: Some(asset.clone()),
+        checksum_name: Some("SHA256SUMS".into()),
         checksum_public_key: None,
         checksum_url: Some(nushell_checksum_url(version)),
         download_name: Some(asset),
@@ -291,7 +291,7 @@ mod tests {
         );
         assert_eq!(
             output.checksum_name,
-            Some("nu-0.112.2-aarch64-apple-darwin.tar.gz".into()),
+            Some("SHA256SUMS".into()),
         );
         assert_eq!(
             output.download_url,
